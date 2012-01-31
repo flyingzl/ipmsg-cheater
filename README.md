@@ -6,5 +6,7 @@ dependence为依赖文件，可以将它们拷贝到python的site-packages目录
 
 或者 直接运行 ipmsg目录下的ipmsg.py文件，如 python ipmsg.py
 
+访问 http://localhost:1987/admin为管理控制台，用户名和密码皆为admin
+
 
 
