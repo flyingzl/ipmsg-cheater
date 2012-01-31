@@ -1,8 +1,10 @@
-dependenceÎªÒÀÀµÎÄ¼ş£¬¿ÉÒÔ½«ËüÃÇ¿½±´µ½pythonµÄsite-packagesÄ¿Â¼ÏÂ
+dependenceä¸ºä¾èµ–æ–‡ä»¶ï¼Œå¯ä»¥å°†å®ƒä»¬æ‹·è´åˆ°pythonçš„site-packagesç›®å½•ä¸‹
 
-ÔËĞĞ manage.py runserver 1987
+è¿è¡Œ manage.py runserver 1987
 
-·ÃÎÊ http://localhost:1987/
+è®¿é—® http://localhost:1987/
 
-»òÕß Ö±½ÓÔËĞĞ ipmsgÄ¿Â¼ÏÂµÄipmsg.pyÎÄ¼ş£¬Èç python ipmsg.py
+æˆ–è€… ç›´æ¥è¿è¡Œ ipmsgç›®å½•ä¸‹çš„ipmsg.pyæ–‡ä»¶ï¼Œå¦‚ python ipmsg.py
+
+
 
