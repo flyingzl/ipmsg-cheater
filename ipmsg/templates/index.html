@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>发送飞鸽信息</title>
+	</head>
+	<script type="text/javascript" src="/js/jquery.tools.min.js"></script>
+
+	
+	<body>
+		<form action="{{url_for('ipmsg.views.send_message')}}" method="post" id='form'>
+			源ip：<input name='src' placeholder="10.4.45.4"/> <br />
+			目的ip：<input name='dst' placeholder="10.4.45.88" /><br />
+			源mac：<input name='src_mac' placeholder="00-1D-92-AA-8A-CB"/><br />
+			目的mac：<input name='dst_mac' placeholder="00-1D-92-AA-8A-CA" /><br />
+			主机名：<input name='host' placeholder="主机名" /><br />
+			用户名：<input name='user' placeholder="用户名"/><br />
+			消息：<input name='msg' placeholder="你好，这是测试信息"/><br />
+			<input type='hidden' name='csrfmiddlewaretoken' value='{{ csrf_token }}' />
+			<button type="submit">提交</button>
+		</form>
+
+        <script>
+
+            $(function(){
+
+                $('button').bind('click',function(event){
+                    event.preventDefault();
+                    event.cancelable=true;
+
+                    var form=$('#form');
+
+                    $.ajax({
+                        type: 'POST',
+                        url: form.attr('action'),
+                        data: form.serialize(),
+                        success: function(msg){
+                            if('发送成功'==msg){
+                                alert('发送成功！')
+                            }
+                        }
+                    });
+                });
+                
+            });
+        </script>
+
+	</body>
+</html>

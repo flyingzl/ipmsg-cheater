@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pcap
+Version: 1.1
+Summary: packet capture library
+Home-page: http://monkey.org/~dugsong/pypcap/
+Author: Dug Song
+Author-email: dugsong@monkey.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

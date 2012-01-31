@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: sendpkt
+Version: 0.2
+Summary: Send ethernet frame in Linux or Win32
+Home-page: http://code.google.com/p/sendpkt/
+Author: gashero
+Author-email: harry.python@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
